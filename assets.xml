@@ -246,6 +246,21 @@
     <image name="cherry">
       <file name="cherry.png" size="2795" />
     </image>
+    <image name="chocoHalfAltMid">
+      <file name="chocoHalfAltMid.png" size="2200" />
+    </image>
+    <image name="chocoCliffRight">
+      <file name="chocoCliffRight.png" size="2528" />
+    </image>
+    <image name="chocoMid">
+      <file name="chocoMid.png" size="2115" />
+    </image>
+    <image name="chocoCenter">
+      <file name="chocoCenter.png" size="1902" />
+    </image>
+    <image name="chocoHillRight">
+      <file name="chocoHillRight.png" size="1429" />
+    </image>
   </images>
   <behaviors />
 </assets>
