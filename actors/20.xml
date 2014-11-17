@@ -8,8 +8,8 @@
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">50</real>
-      <real id="height">58</real>
+      <real id="width">70</real>
+      <real id="height">70</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,7 +18,7 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">scenery-grass</image>
+    <image id="image">cherry</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>

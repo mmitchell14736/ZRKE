@@ -216,6 +216,36 @@
     <image name="Zombie 6_00002">
       <file name="Zombie 6_00002.png" size="4393" />
     </image>
+    <image name="cakeMid">
+      <file name="cakeMid.png" size="1990" />
+    </image>
+    <image name="cakeCenter">
+      <file name="cakeCenter.png" size="1731" />
+    </image>
+    <image name="cakeCenter_rounded">
+      <file name="cakeCenter_rounded.png" size="2214" />
+    </image>
+    <image name="cakeHalfAltMid">
+      <file name="cakeHalfAltMid.png" size="2184" />
+    </image>
+    <image name="cookiePink">
+      <file name="cookiePink.png" size="1489" />
+    </image>
+    <image name="cookieChoco">
+      <file name="cookieChoco.png" size="1586" />
+    </image>
+    <image name="hillCanePink">
+      <file name="hillCanePink.png" size="1457" />
+    </image>
+    <image name="creamPink">
+      <file name="creamPink.png" size="1934" />
+    </image>
+    <image name="cupCake">
+      <file name="cupCake.png" size="1763" />
+    </image>
+    <image name="cherry">
+      <file name="cherry.png" size="2795" />
+    </image>
   </images>
   <behaviors />
 </assets>
