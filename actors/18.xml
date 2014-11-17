@@ -9,7 +9,7 @@
     </point>
     <size id="size">
       <real id="width">70</real>
-      <real id="height">26</real>
+      <real id="height">70</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,7 +18,7 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">scenery-bush</image>
+    <image id="image">creamPink</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
