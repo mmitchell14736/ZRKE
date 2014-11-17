@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game GSCVersion="0.10.5" PGFVersion="0.19" title="ZRKE">
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">1024</real>
+      <real id="height">768</real>
+    </size>
+    <text id="actorTags">special	platforms</text>
+    <real id="id261653" name="playerX">0</real>
+    <real id="id806456" name="playerY">0</real>
+    <boolean id="id395742" name="spring">false</boolean>
+    <boolean id="id264363" name="bouncePlayer">false</boolean>
+    <real id="id787143" name="sliderOffsetX-1">0</real>
+    <integer id="id291291" name="lives">3</integer>
+    <integer id="id753353" name="score">0</integer>
+    <boolean id="id447662" name="spawnPlayer">false</boolean>
+    <real id="id152866" name="spawnX">0</real>
+    <real id="id323543" name="spawnY">0</real>
+    <boolean id="id279594" name="exitLevel">false</boolean>
+    <boolean id="id965315" name="switchOn">false</boolean>
+    <text id="id188001" name="move">nill</text>
+    <boolean id="id963977" name="enemyPop">false</boolean>
+  </attributes>
+  <tags />
+  <resolutionIndependence>1</resolutionIndependence>
+  <instructions />
+  <resolution>3</resolution>
+  <longDescription>A full Platformer game construction kit.
+
+From www.jamie-cross.net. 
+
+Please contact jamie@jamie-cross.net directly for technical support.</longDescription>
+  <prototypes>
+    <actor id="id433911" />
+    <actor id="id417353" />
+    <actor id="id934069" />
+    <actor id="id374897" />
+    <actor id="id738636" />
+    <actor id="id258072" />
+    <actor id="id173898" />
+    <actor id="id612186" />
+    <actor id="id868806" />
+    <actor id="id600717" />
+    <actor id="id223618" />
+    <actor id="id709615" />
+    <actor id="id891375" />
+    <actor id="id537380" />
+    <actor id="id612515" />
+    <actor id="id340982" />
+    <actor id="id182955" />
+    <actor id="id260682" />
+    <actor id="id566475" />
+    <actor id="id741492" />
+    <actor id="id113104" />
+    <actor id="id703376" />
+    <actor id="id389170" />
+    <actor id="id717358" />
+    <actor id="id462689" />
+    <actor id="id919227" />
+    <actor id="id688992" />
+    <actor id="id574503" />
+    <actor id="id147013" />
+    <actor id="id963582" />
+    <actor id="id201779" />
+    <actor id="id690708" />
+    <actor id="id188547" />
+    <actor id="id980679" />
+    <actor id="id699543" />
+    <actor id="id505329" />
+    <actor id="id667158" />
+    <actor id="id526149" />
+    <actor id="id190963" />
+    <actor id="id731614" />
+  </prototypes>
+  <plugins>
+    <attributes id="playhaven" />
+    <attributes id="qqgamecenter">
+      <boolean id="enabled">false</boolean>
+    </attributes>
+    <attributes id="kiip">
+      <text id="appKey" />
+      <text id="appSecret" />
+      <text id="achievementIdentifiers" />
+      <text id="achievementNames" />
+      <text id="leaderboardIdentifiers" />
+      <text id="leaderboardNames" />
+    </attributes>
+  </plugins>
+  <scenes>
+    <scene id="id852469" />
+    <scene id="id433475" />
+    <scene id="id269551" />
+    <scene id="id269552" />
+  </scenes>
+</game>

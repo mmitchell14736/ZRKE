@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id738636" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">Slider</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">50</real>
+      <real id="height">50</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">Slider</image>
+    <text id="tags">platforms</text>
+    <boolean id="preloadArt">true</boolean>
+    <real id="id652770" name="myMax">0</real>
+    <real id="id708566" name="myMin">0</real>
+    <real id="id674053" name="mySpeed">0</real>
+    <real id="id154192" name="startingY">0</real>
+  </attributes>
+  <behaviors>
+    <behavior id="id393328" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Lock me to my starting Y location</text>
+        <text id="bundleName">Group.behavior</text>
+      </attributes>
+      <behaviors>
+        <behavior id="id524067" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id154192</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.position.y" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id584179" class="ConstrainAttributeBehavior" enabled="true">
+          <attributes>
+            <text id="name">Constrain Attribute</text>
+            <text id="bundleName">ConstrainAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.position.y</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id154192" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id530114" class="NoteBehavior" enabled="true">
+          <attributes>
+            <text id="name">Note</text>
+            <text id="bundleName">Note.behavior</text>
+            <text id="note">I'm constraining this actor to its starting Y location so it does not move up or down when the player is on it.
+</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id782811" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Keep track of my X location</text>
+        <text id="bundleName">Group.behavior</text>
+      </attributes>
+      <behaviors>
+        <behavior id="id207828" class="ConstrainAttributeBehavior" enabled="true">
+          <attributes>
+            <text id="name">Constrain Attribute - keep track my X location so the player can 'stick' to me</text>
+            <text id="bundleName">ConstrainAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id787143</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.position.x" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id670509" class="NoteBehavior" enabled="true">
+          <attributes>
+            <text id="name">Note</text>
+            <text id="bundleName">Note.behavior</text>
+            <text id="note">If you want to have more than one 'slider' platform per level, you'll need to add additional Game Level Attributes called "sliderOffsetX-2", "sliderOffsetX-3", etc. And update the code as needed. This is needed to the player will 'stick' to other 'slider' platforms as well. If you only use one per level, you won't have to worry about this.</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id951660" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Movement Behaviors</text>
+        <text id="bundleName">Group.behavior</text>
+      </attributes>
+      <behaviors>
+        <behavior id="id360423" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - Start moving to the right</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id674053" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id337573" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Move Right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id212975" eventType="mouse position" pluginPredicateTypeIndex="0">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.position.x</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&lt;=</text>
+                  <real id="RHS">
+                    <expression>
+                      <reference keypath="self.attributes.id708566" />
+                    </expression>
+                  </real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id758516" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id674053" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors />
+        </behavior>
+        <behavior id="id605729" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Move Left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id212975" eventType="mouse position" pluginPredicateTypeIndex="0">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.position.x</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&gt;=</text>
+                  <real id="RHS">
+                    <expression>
+                      <reference keypath="self.attributes.id652770" />
+                    </expression>
+                  </real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id758516" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+                <text id="RHS">
+                  <expression>
+                    <string xml:space="preserve">-</string>
+                    <reference keypath="self.attributes.id674053" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors />
+        </behavior>
+        <behavior id="id353552" class="NoteBehavior" enabled="true">
+          <attributes>
+            <text id="name">Note</text>
+            <text id="bundleName">Note.behavior</text>
+            <text id="note">These behaviors use the myMax, myMin, and mySpeed to move the platform correctly on screen. Those Attributes are best set in the Instance of the actor once it's placed on screen, that is why they start as zero in the Prototype actor.</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">2</enumeration>
+        <enumeration id="verticalWrap">2</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">50</integer>
+        <integer id="tileHeight">50</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">10000</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">true</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

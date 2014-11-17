@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id612186" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">power-up-full</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">50</real>
+      <real id="height">50</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">power-up-full</image>
+    <text id="tags">platforms</text>
+    <boolean id="preloadArt">true</boolean>
+    <boolean id="id283344" name="spawned">false</boolean>
+    <real id="id838662" name="startingY">0</real>
+  </attributes>
+  <behaviors>
+    <behavior id="id196234" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute - Record my Starting Y Position</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.attributes.id838662</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.y" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id669066" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Trigger my Power Up</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id819948" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id600717</text>
+              <text id="actorTag">special</text>
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id999752" eventType="mouse position" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id806456</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&lt;</text>
+              <real id="RHS">
+                <expression>
+                  <reference keypath="self.attributes.position.y" />
+                </expression>
+              </real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id872334" eventType="mouse position" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.id283344</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">0</index>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id917879" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - make me inactive</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id283344</text>
+            <text id="RHS">true</text>
+          </attributes>
+        </behavior>
+        <behavior id="id230005" class="ChangeImageAction" enabled="true">
+          <attributes>
+            <text id="name">Change Image - show my inactive image</text>
+            <text id="bundleName">ChangeImage.behavior</text>
+            <image id="image">power-up-empty</image>
+          </attributes>
+        </behavior>
+        <behavior id="id433871" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor - Star (Double Jump PowerUp)</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id891375</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">0</real>
+            <real id="y">
+              <expression>
+                <reference keypath="self.attributes.size.height" />
+                <string xml:space="preserve">/2</string>
+              </expression>
+            </real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">1</index>
+          </attributes>
+        </behavior>
+        <behavior id="id400039" class="CompoundBehavior" enabled="true">
+          <attributes>
+            <text id="name">Pop me up animation</text>
+            <text id="bundleName">Group.behavior</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id161699" class="InterpolateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Interpolate</text>
+                <text id="bundleName">Interpolate.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <text id="targetAttribute">self.attributes.position.y</text>
+                <real id="finalValue">
+                  <expression>
+                    <reference keypath="self.attributes.id838662" />
+                    <string xml:space="preserve">+15</string>
+                  </expression>
+                </real>
+                <real id="duration">0.1</real>
+                <index id="easing">0</index>
+              </attributes>
+            </behavior>
+            <behavior id="id291143" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">0.1</real>
+                <boolean id="runToCompletion">true</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id533506" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <real id="finalValue">
+                      <expression>
+                        <reference keypath="self.attributes.id838662" />
+                      </expression>
+                    </real>
+                    <real id="duration">0.1</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">50</integer>
+        <integer id="tileHeight">50</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

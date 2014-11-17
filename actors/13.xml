@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id891375" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">star</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">19</real>
+      <real id="height">19</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">star</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id796396" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute - Pop me up out of the block</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+        <text id="RHS">150</text>
+      </attributes>
+    </behavior>
+    <behavior id="id802187" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute - Move me to the right after I've spawned</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+        <text id="RHS">50</text>
+      </attributes>
+    </behavior>
+    <behavior id="id888470" class="AccelerateBehavior" enabled="true">
+      <attributes>
+        <text id="name">Accelerate - Give me gravity</text>
+        <text id="bundleName">Accelerate.behavior</text>
+        <angle id="direction">270</angle>
+        <index id="space">1</index>
+        <real id="acceleration">400</real>
+      </attributes>
+    </behavior>
+    <behavior id="id692765" class="CollideBehavior" enabled="true">
+      <attributes>
+        <text id="name">Collide - With Platforms</text>
+        <text id="bundleName">Collide.behavior</text>
+        <text id="prototypeKey">id433911</text>
+        <text id="actorTag">platforms</text>
+        <index id="mode">1</index>
+      </attributes>
+    </behavior>
+    <behavior id="id264731" class="CollideBehavior" enabled="true">
+      <attributes>
+        <text id="name">Collide - With Special Platforms</text>
+        <text id="bundleName">Collide.behavior</text>
+        <text id="prototypeKey">id433911</text>
+        <text id="actorTag">special</text>
+        <index id="mode">1</index>
+      </attributes>
+    </behavior>
+    <behavior id="id315145" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Destroy me when the player picks me up</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id951711" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id600717</text>
+              <text id="actorTag">special</text>
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id723196" class="PlaySoundAction" enabled="true">
+          <attributes>
+            <text id="name">Play Sound</text>
+            <text id="bundleName">PlaySound.behavior</text>
+            <sound id="soundName">Powerup</sound>
+            <boolean id="loop">false</boolean>
+            <boolean id="runToCompletion">true</boolean>
+            <boolean id="positional">false</boolean>
+            <boolean id="dopplerShift">false</boolean>
+            <real id="volume">1</real>
+            <real id="pitch">1</real>
+          </attributes>
+        </behavior>
+        <behavior id="id745185" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">19</integer>
+        <integer id="tileHeight">19</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">true</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

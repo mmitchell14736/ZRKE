@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id223618" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">player death/controller</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">100</real>
+      <real id="height">100</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">0.78195822238922</real>
+      <real id="green">0</real>
+      <real id="blue">0.012444099411368</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image" />
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id800207" class="NoteBehavior" enabled="true">
+      <attributes>
+        <text id="name">Note</text>
+        <text id="bundleName">Note.behavior</text>
+        <text id="note">This actor acts as the 'game controller' and MUST fill/cross the entire bottom of the level. This actor will kill the player and other actor once they pass the bottom of the screen.
+</text>
+      </attributes>
+    </behavior>
+    <behavior id="id939441" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Handle the players death</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id673293" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id600717</text>
+              <text id="actorTag">special</text>
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id190870" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - reduce lives by 1</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id291291</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id291291" />
+                <string xml:space="preserve">-1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id816968" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - allow a new hero to spawn</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id447662</text>
+            <text id="RHS">true</text>
+          </attributes>
+        </behavior>
+        <behavior id="id558679" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - reset player</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id264363</text>
+            <text id="RHS">false</text>
+          </attributes>
+        </behavior>
+        <behavior id="id976059" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Spawn the player after death</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id464221" eventType="mouse position" pluginPredicateTypeIndex="0">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id447662</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id321167" eventType="mouse position" pluginPredicateTypeIndex="0">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id291291</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&gt;</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id993256" class="NoteBehavior" enabled="true">
+              <attributes>
+                <text id="name">Note</text>
+                <text id="bundleName">Note.behavior</text>
+                <text id="note">The Spawn Behavior below is using the spawnX and spawnY values from the Checkpoint actor when spawning a new player.</text>
+              </attributes>
+            </behavior>
+            <behavior id="id468580" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id600717</text>
+                <angle id="direction">0</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">
+                  <expression>
+                    <reference keypath="game.attributes.id152866" />
+                  </expression>
+                </real>
+                <real id="y">
+                  <expression>
+                    <reference keypath="game.attributes.id323543" />
+                  </expression>
+                </real>
+                <index id="positionSpace">1</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+            <behavior id="id127509" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute - only spawn one player</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id447662</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors />
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+    <behavior id="id126615" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Reset the game if the player runs out of lives</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id683740" eventType="mouse position" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id291291</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&lt;=</text>
+              <real id="RHS">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id122716" class="ResetGameAction" enabled="true">
+          <attributes>
+            <text id="name">Reset Game</text>
+            <text id="bundleName">ResetGame.behavior</text>
+            <boolean id="enableAdvertisement">false</boolean>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">0</integer>
+        <integer id="tileHeight">0</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

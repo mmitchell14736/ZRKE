@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id731614" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">up</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">64</real>
+      <real id="height">64</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">0.25</real>
+    </color>
+    <image id="image">up</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id605857" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Jump</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id434963" eventType="touch" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="touch" conditionType="inside">
+            <attributes />
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id966489" class="NoteBehavior" enabled="true">
+          <attributes>
+            <text id="name">Note</text>
+            <text id="bundleName">Note.behavior</text>
+            <text id="note">See OTHERWISE below.</text>
+          </attributes>
+        </behavior>
+        <behavior id="id528493" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - jump</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id188001</text>
+            <text id="RHS">jump</text>
+          </attributes>
+        </behavior>
+        <behavior id="id896758" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - light up the button</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.color.alpha</text>
+            <text id="RHS">.5</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior id="id459411" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - set move to nill</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id188001</text>
+            <text id="RHS">nill</text>
+          </attributes>
+        </behavior>
+        <behavior id="id828769" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - dim up the button</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.color.alpha</text>
+            <text id="RHS">.25</text>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">64</integer>
+        <integer id="tileHeight">64</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>
