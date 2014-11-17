@@ -848,7 +848,7 @@ Added the rule below to pop/bounce the player up after they crush and enemy.</te
           <attributes>
             <text id="name">Change Image</text>
             <text id="bundleName">ChangeImage.behavior</text>
-            <image id="image">zombie 3_00001</image>
+            <image id="image">Zombie 6_00001</image>
           </attributes>
         </behavior>
       </elseBehaviors>
