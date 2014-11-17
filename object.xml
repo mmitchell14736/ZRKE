@@ -73,24 +73,22 @@ Please contact jamie@jamie-cross.net directly for technical support.</longDescri
     <actor id="id526149" />
     <actor id="id190963" />
     <actor id="id731614" />
-	<actor id="id349882" />
-	<actor id="id492228" />
-	<actor id="id121502" />
-	<actor id="id725342" />
-	<actor id="id618849" />
-	<actor id="id130706" />
-	<actor id="id708514" />
-	<actor id="id382156" />
-	<actor id="id491572" />
-	<actor id="id288758" />
-	<actor id="id138391" />
-	<actor id="id401745" />
-	<actor id="id197984" />
-	<actor id="id578011" />
-	<actor id="id353695" />
-	<actor id="id462460" />
-	
-	
+    <actor id="id349882" />
+    <actor id="id492228" />
+    <actor id="id121502" />
+    <actor id="id725342" />
+    <actor id="id618849" />
+    <actor id="id130706" />
+    <actor id="id708514" />
+    <actor id="id382156" />
+    <actor id="id491572" />
+    <actor id="id288758" />
+    <actor id="id138391" />
+    <actor id="id401745" />
+    <actor id="id197984" />
+    <actor id="id578011" />
+    <actor id="id353695" />
+    <actor id="id462460" />
   </prototypes>
   <plugins>
     <attributes id="playhaven" />
