@@ -261,6 +261,24 @@
     <image name="chocoHillRight">
       <file name="chocoHillRight.png" size="1429" />
     </image>
+    <image name="lvl 1 bg">
+      <file name="lvl 1 bg.png" size="534944" />
+    </image>
+    <image name="Settings">
+      <file name="Settings.png" size="7356" />
+    </image>
+    <image name="Title">
+      <file name="Title.png" size="15482" />
+    </image>
+    <image name="Credits">
+      <file name="Credits.png" size="7728" />
+    </image>
+    <image name="Play">
+      <file name="Play.png" size="6301" />
+    </image>
+    <image name="Quit">
+      <file name="Quit.png" size="6711" />
+    </image>
   </images>
   <behaviors />
 </assets>

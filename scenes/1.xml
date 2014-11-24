@@ -10,6 +10,7 @@
               <real id="y">661.85546875</real>
             </point>
             <angle id="rotation">0</angle>
+            <image id="image">lvl 1 bg</image>
           </attributes>
           <aspects>
             <graphics>
@@ -30,7 +31,15 @@
               <real id="x">512</real>
               <real id="y">623.89453125</real>
             </point>
+            <image id="image">Title</image>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">1</real>
+            </color>
           </attributes>
+          <behaviors />
           <aspects>
             <graphics>
               <attributes>
@@ -47,9 +56,10 @@
         <actor id="id461130" prototype="id188547">
           <attributes>
             <point id="position">
-              <real id="x">512</real>
-              <real id="y">289.09765625</real>
+              <real id="x">514</real>
+              <real id="y">457.09765625</real>
             </point>
+            <image id="image">Play</image>
           </attributes>
           <aspects>
             <graphics>
@@ -70,6 +80,7 @@
               <real id="x">512</real>
               <real id="y">156.33203125</real>
             </point>
+            <image id="image">Credits</image>
           </attributes>
           <aspects>
             <graphics>

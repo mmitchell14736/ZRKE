@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id980679" PGFVersion="0.19" GSCVersion="0.10.5">
+<actor id="id324954" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">Credits</text>
+    <text id="name">settings</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -18,41 +18,11 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image" />
+    <image id="image">Settings</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
-  <behaviors>
-    <behavior id="id467739" class="RuleBehavior" enabled="true">
-      <attributes>
-        <text id="name">Go to the credits screen</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
-      </attributes>
-      <conditions>
-        <condition id="id548120" eventType="touch" pluginPredicateTypeIndex="0">
-          <attributes>
-            <index id="conditionType">0</index>
-          </attributes>
-          <predicate type="touch" conditionType="pressed">
-            <attributes />
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id391203" class="ChangeSceneAction" enabled="true">
-          <attributes>
-            <text id="name">Change Scene</text>
-            <text id="bundleName">ChangeScene.behavior</text>
-            <text id="sceneKey">id433475</text>
-            <boolean id="enableAdvertisement">false</boolean>
-            <index id="index">1</index>
-          </attributes>
-        </behavior>
-      </behaviors>
-      <elseBehaviors />
-    </behavior>
-  </behaviors>
+  <behaviors />
   <aspects>
     <graphics>
       <attributes>
@@ -64,8 +34,8 @@
         <enumeration id="verticalAnchor">0</enumeration>
         <boolean id="flipHorizontally">false</boolean>
         <boolean id="flipVertically">false</boolean>
-        <integer id="tileWidth">1024</integer>
-        <integer id="tileHeight">75</integer>
+        <integer id="tileWidth">175</integer>
+        <integer id="tileHeight">55</integer>
       </attributes>
     </graphics>
     <motion>
@@ -81,11 +51,11 @@
     </motion>
     <physics>
       <attributes>
-        <real id="density">0</real>
-        <real id="friction">0</real>
-        <real id="restitution">0</real>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
         <boolean id="fixedRotation">false</boolean>
-        <boolean id="movable">false</boolean>
+        <boolean id="movable">true</boolean>
         <enumeration id="collisionShape">0</enumeration>
         <real id="drag">0</real>
         <real id="angularDrag">0</real>
