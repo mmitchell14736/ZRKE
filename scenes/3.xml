@@ -2582,6 +2582,7 @@
             <real id="id123632" name="myMax">560</real>
             <real id="id397601" name="myMin">150</real>
             <real id="id593767" name="mySpeed">50</real>
+            <image id="image">cookieChoco</image>
           </attributes>
           <aspects>
             <graphics>
