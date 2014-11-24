@@ -8,8 +8,8 @@
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">50</real>
-      <real id="height">100</real>
+      <real id="width">36</real>
+      <real id="height">46</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,7 +18,7 @@
       <real id="blue">1</real>
       <real id="alpha">0</real>
     </color>
-    <image id="image">Zombie 6_00001</image>
+    <image id="image">p3_walk_01</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
     <boolean id="id827006" name="jumping">false</boolean>
@@ -155,7 +155,7 @@
           <attributes>
             <text id="name">Change Image - Show my dead image</text>
             <text id="bundleName">ChangeImage.behavior</text>
-            <image id="image">Zombie 6_00001</image>
+            <image id="image">player-dead</image>
           </attributes>
         </behavior>
         <behavior id="id145984" class="ChangeAttributeAction" enabled="true">
@@ -848,7 +848,7 @@ Added the rule below to pop/bounce the player up after they crush and enemy.</te
           <attributes>
             <text id="name">Change Image</text>
             <text id="bundleName">ChangeImage.behavior</text>
-            <image id="image">Zombie 6_00001</image>
+            <image id="image">p3_walk_01</image>
           </attributes>
         </behavior>
       </elseBehaviors>
@@ -979,7 +979,7 @@ Check the OTHERWISE section
                   <attributes>
                     <text id="name">Animate</text>
                     <text id="bundleName">Animate.behavior</text>
-                    <text id="images">Zombie 6_00001	Zombie 6_00002	Zombie 6_00003	Zombie 6_00004	Zombie 6_00005	Zombie 6_00006</text>
+                    <text id="images">p3_walk_01	p3_walk_02	p3_walk_03	p3_walk_04	p3_walk_05	p3_walk_06	p3_walk_07</text>
                     <index id="speed">10</index>
                     <boolean id="loop">true</boolean>
                     <boolean id="restoreActorImage">true</boolean>
@@ -1011,7 +1011,7 @@ Check the OTHERWISE section
                       <attributes>
                         <text id="name">Change Image - Jumping image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
-                        <image id="image">Zombie 6_00001</image>
+                        <image id="image">p3_jump</image>
                       </attributes>
                     </behavior>
                   </behaviors>
@@ -1041,7 +1041,7 @@ Check the OTHERWISE section
                       <attributes>
                         <text id="name">Change Image - Dead image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
-                        <image id="image">Zombie 6_00001</image>
+                        <image id="image">player-dead</image>
                       </attributes>
                     </behavior>
                   </behaviors>

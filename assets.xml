@@ -171,95 +171,311 @@
     <image name="up">
       <file name="up.png" size="5138" />
     </image>
-    <image name="zombie 3_00001">
-      <file name="zombie 3_00001.png" size="44414" />
+    <image name="cakeCliffRight">
+      <file name="cakeCliffRight.png" size="2486" />
     </image>
-    <image name="zombie 3_00010">
-      <file name="zombie 3_00010.png" size="44368" />
+    <image name="cakeCliffRightAlt">
+      <file name="cakeCliffRightAlt.png" size="2383" />
     </image>
-    <image name="zombie 3_00020">
-      <file name="zombie 3_00020.png" size="44526" />
+    <image name="cakeHalf">
+      <file name="cakeHalf.png" size="1974" />
     </image>
-    <image name="zombie 3_00030">
-      <file name="zombie 3_00030.png" size="44564" />
+    <image name="cakeHalfAlt">
+      <file name="cakeHalfAlt.png" size="2456" />
     </image>
-    <image name="zombie 3_00040">
-      <file name="zombie 3_00040.png" size="44765" />
+    <image name="cakeHalfAltLeft">
+      <file name="cakeHalfAltLeft.png" size="2336" />
     </image>
-    <image name="zombie 3_00050">
-      <file name="zombie 3_00050.png" size="44414" />
+    <image name="cakeHalfAltMid">
+      <file name="cakeHalfAltMid.png" size="2184" />
     </image>
-    <image name="zombie 3_00060">
-      <file name="zombie 3_00060.png" size="44414" />
+    <image name="cakeHalfAltRight">
+      <file name="cakeHalfAltRight.png" size="2288" />
     </image>
-    <image name="zombie 3_00067">
-      <file name="zombie 3_00067.png" size="44414" />
+    <image name="cakeHalfLeft">
+      <file name="cakeHalfLeft.png" size="1880" />
     </image>
-    <image name="zombie 3_00070">
-      <file name="zombie 3_00070.png" size="44414" />
+    <image name="cakeHalfMid">
+      <file name="cakeHalfMid.png" size="1708" />
     </image>
-    <image name="Zombie 6_00003">
-      <file name="Zombie 6_00003.png" size="4460" />
+    <image name="cakeHalfRight">
+      <file name="cakeHalfRight.png" size="1871" />
     </image>
-    <image name="Zombie 6_00004">
-      <file name="Zombie 6_00004.png" size="4399" />
+    <image name="cakeHillLeft">
+      <file name="cakeHillLeft.png" size="1604" />
     </image>
-    <image name="Zombie 6_00005">
-      <file name="Zombie 6_00005.png" size="4411" />
+    <image name="cakeHillLeft2">
+      <file name="cakeHillLeft2.png" size="1768" />
     </image>
-    <image name="Zombie 6_00006">
-      <file name="Zombie 6_00006.png" size="4330" />
+    <image name="cakeHillRight">
+      <file name="cakeHillRight.png" size="1601" />
     </image>
-    <image name="Zombie 6_00001">
-      <file name="Zombie 6_00001.png" size="4412" />
+    <image name="cakeHillRight2">
+      <file name="cakeHillRight2.png" size="1846" />
     </image>
-    <image name="Zombie 6_00002">
-      <file name="Zombie 6_00002.png" size="4393" />
+    <image name="cakeLedgeLeft">
+      <file name="cakeLedgeLeft.png" size="1131" />
+    </image>
+    <image name="cakeLedgeRight">
+      <file name="cakeLedgeRight.png" size="1144" />
+    </image>
+    <image name="cakeLeft">
+      <file name="cakeLeft.png" size="2252" />
     </image>
     <image name="cakeMid">
       <file name="cakeMid.png" size="1990" />
+    </image>
+    <image name="cakeRight">
+      <file name="cakeRight.png" size="2247" />
+    </image>
+    <image name="candyBlue">
+      <file name="candyBlue.png" size="1860" />
+    </image>
+    <image name="candyGreen">
+      <file name="candyGreen.png" size="1889" />
+    </image>
+    <image name="candyRed">
+      <file name="candyRed.png" size="1849" />
+    </image>
+    <image name="candyYellow">
+      <file name="candyYellow.png" size="15838" />
+    </image>
+    <image name="canePink">
+      <file name="canePink.png" size="1311" />
+    </image>
+    <image name="canePinkSmall">
+      <file name="canePinkSmall.png" size="2568" />
+    </image>
+    <image name="canePinkTop">
+      <file name="canePinkTop.png" size="2239" />
+    </image>
+    <image name="canePinkTopAlt">
+      <file name="canePinkTopAlt.png" size="2178" />
+    </image>
+    <image name="cherry">
+      <file name="cherry.png" size="2795" />
+    </image>
+    <image name="choco">
+      <file name="choco.png" size="2534" />
+    </image>
+    <image name="chocoCenter">
+      <file name="chocoCenter.png" size="1902" />
+    </image>
+    <image name="chocoCenter_rounded">
+      <file name="chocoCenter_rounded.png" size="2398" />
+    </image>
+    <image name="chocoCliffLeft">
+      <file name="chocoCliffLeft.png" size="2568" />
+    </image>
+    <image name="chocoCliffLeftAlt">
+      <file name="chocoCliffLeftAlt.png" size="2274" />
+    </image>
+    <image name="chocoCliffRight">
+      <file name="chocoCliffRight.png" size="2528" />
+    </image>
+    <image name="chocoCliffRightAlt">
+      <file name="chocoCliffRightAlt.png" size="2528" />
+    </image>
+    <image name="chocoHalf">
+      <file name="chocoHalf.png" size="2102" />
+    </image>
+    <image name="chocoHalfAlt">
+      <file name="chocoHalfAlt.png" size="2574" />
+    </image>
+    <image name="chocoHalfAltLeft">
+      <file name="chocoHalfAltLeft.png" size="2402" />
+    </image>
+    <image name="chocoHalfAltMid">
+      <file name="chocoHalfAltMid.png" size="2200" />
+    </image>
+    <image name="chocoHalfAltRight">
+      <file name="chocoHalfAltRight.png" size="2402" />
+    </image>
+    <image name="chocoHalfLeft">
+      <file name="chocoHalfLeft.png" size="1953" />
+    </image>
+    <image name="chocoHalfMid">
+      <file name="chocoHalfMid.png" size="1746" />
+    </image>
+    <image name="chocoHalfRight">
+      <file name="chocoHalfRight.png" size="1938" />
+    </image>
+    <image name="chocoHillLeft">
+      <file name="chocoHillLeft.png" size="1510" />
+    </image>
+    <image name="chocoHillLeft2">
+      <file name="chocoHillLeft2.png" size="1905" />
+    </image>
+    <image name="chocoHillRight">
+      <file name="chocoHillRight.png" size="1429" />
+    </image>
+    <image name="chocoHillRight2">
+      <file name="chocoHillRight2.png" size="1958" />
+    </image>
+    <image name="chocoLedgeLeft">
+      <file name="chocoLedgeLeft.png" size="1152" />
+    </image>
+    <image name="chocoLedgeRight">
+      <file name="chocoLedgeRight.png" size="1158" />
+    </image>
+    <image name="chocoLeft">
+      <file name="chocoLeft.png" size="2370" />
+    </image>
+    <image name="chocoMid">
+      <file name="chocoMid.png" size="2115" />
+    </image>
+    <image name="chocoRight">
+      <file name="chocoRight.png" size="2373" />
+    </image>
+    <image name="cookieBrown">
+      <file name="cookieBrown.png" size="1552" />
+    </image>
+    <image name="cookieChoco">
+      <file name="cookieChoco.png" size="1586" />
+    </image>
+    <image name="cookiePink">
+      <file name="cookiePink.png" size="1489" />
+    </image>
+    <image name="creamChoco">
+      <file name="creamChoco.png" size="2120" />
+    </image>
+    <image name="creamMocca">
+      <file name="creamMocca.png" size="2064" />
+    </image>
+    <image name="creamPink">
+      <file name="creamPink.png" size="1934" />
+    </image>
+    <image name="creamVanilla">
+      <file name="creamVanilla.png" size="1882" />
+    </image>
+    <image name="cupCake">
+      <file name="cupCake.png" size="1763" />
+    </image>
+    <image name="gummyWormGreenEnd">
+      <file name="gummyWormGreenEnd.png" size="1452" />
+    </image>
+    <image name="gummyWormGreenHead">
+      <file name="gummyWormGreenHead.png" size="2816" />
+    </image>
+    <image name="gummyWormGreenMid">
+      <file name="gummyWormGreenMid.png" size="2741" />
+    </image>
+    <image name="gummyWormRedEnd">
+      <file name="gummyWormRedEnd.png" size="15413" />
+    </image>
+    <image name="gummyWormRedHead">
+      <file name="gummyWormRedHead.png" size="2671" />
+    </image>
+    <image name="gummyWormRedMid">
+      <file name="gummyWormRedMid.png" size="2604" />
+    </image>
+    <image name="heart">
+      <file name="heart.png" size="1814" />
+    </image>
+    <image name="hillCaneChoco">
+      <file name="hillCaneChoco.png" size="1570" />
+    </image>
+    <image name="hillCaneChocoTop">
+      <file name="hillCaneChocoTop.png" size="2121" />
+    </image>
+    <image name="hillCaneGreen">
+      <file name="hillCaneGreen.png" size="1593" />
+    </image>
+    <image name="hillCaneGreenTop">
+      <file name="hillCaneGreenTop.png" size="2077" />
+    </image>
+    <image name="hillCanePink">
+      <file name="hillCanePink.png" size="1457" />
+    </image>
+    <image name="hillCanePinkTop">
+      <file name="hillCanePinkTop.png" size="1896" />
+    </image>
+    <image name="hillCaneRed">
+      <file name="hillCaneRed.png" size="1630" />
+    </image>
+    <image name="hillCaneRedTop">
+      <file name="hillCaneRedTop.png" size="2100" />
+    </image>
+    <image name="liquidLava">
+      <file name="liquidLava.png" size="868" />
+    </image>
+    <image name="liquidLavaTop">
+      <file name="liquidLavaTop.png" size="2040" />
+    </image>
+    <image name="liquidLavaTop_mid">
+      <file name="liquidLavaTop_mid.png" size="1907" />
+    </image>
+    <image name="liquidWater">
+      <file name="liquidWater.png" size="896" />
+    </image>
+    <image name="liquidWaterTop">
+      <file name="liquidWaterTop.png" size="2091" />
+    </image>
+    <image name="liquidWaterTop_mid">
+      <file name="liquidWaterTop_mid.png" size="1966" />
+    </image>
+    <image name="lollipopBase">
+      <file name="lollipopBase.png" size="1044" />
+    </image>
+    <image name="lollipopBaseBeige">
+      <file name="lollipopBaseBeige.png" size="1049" />
+    </image>
+    <image name="lollipopBaseBrown">
+      <file name="lollipopBaseBrown.png" size="1048" />
+    </image>
+    <image name="lollipopBaseCake">
+      <file name="lollipopBaseCake.png" size="1462" />
+    </image>
+    <image name="lollipopBasePink">
+      <file name="lollipopBasePink.png" size="1399" />
+    </image>
+    <image name="lollipopFruitGreen">
+      <file name="lollipopFruitGreen.png" size="2888" />
+    </image>
+    <image name="lollipopFruitRed">
+      <file name="lollipopFruitRed.png" size="3383" />
+    </image>
+    <image name="lollipopFruitYellow">
+      <file name="lollipopFruitYellow.png" size="3428" />
+    </image>
+    <image name="lollipopGreen">
+      <file name="lollipopGreen.png" size="3586" />
+    </image>
+    <image name="lollipopRed">
+      <file name="lollipopRed.png" size="3644" />
+    </image>
+    <image name="lollipopWhiteGreen">
+      <file name="lollipopWhiteGreen.png" size="3539" />
+    </image>
+    <image name="lollipopWhiteRed">
+      <file name="lollipopWhiteRed.png" size="3558" />
+    </image>
+    <image name="preview">
+      <file name="preview.png" size="88504" />
+    </image>
+    <image name="sample">
+      <file name="sample.png" size="176947" />
+    </image>
+    <image name="sheet">
+      <file name="sheet.png" size="86264" />
+    </image>
+    <image name="waffleChoco">
+      <file name="waffleChoco.png" size="1992" />
+    </image>
+    <image name="wafflePink">
+      <file name="wafflePink.png" size="1949" />
+    </image>
+    <image name="waffleWhite">
+      <file name="waffleWhite.png" size="1955" />
+    </image>
+    <image name="cake">
+      <file name="cake.png" size="2356" />
     </image>
     <image name="cakeCenter">
       <file name="cakeCenter.png" size="1731" />
     </image>
     <image name="cakeCenter_rounded">
       <file name="cakeCenter_rounded.png" size="2214" />
-    </image>
-    <image name="cakeHalfAltMid">
-      <file name="cakeHalfAltMid.png" size="2184" />
-    </image>
-    <image name="cookiePink">
-      <file name="cookiePink.png" size="1489" />
-    </image>
-    <image name="cookieChoco">
-      <file name="cookieChoco.png" size="1586" />
-    </image>
-    <image name="hillCanePink">
-      <file name="hillCanePink.png" size="1457" />
-    </image>
-    <image name="creamPink">
-      <file name="creamPink.png" size="1934" />
-    </image>
-    <image name="cupCake">
-      <file name="cupCake.png" size="1763" />
-    </image>
-    <image name="cherry">
-      <file name="cherry.png" size="2795" />
-    </image>
-    <image name="chocoHalfAltMid">
-      <file name="chocoHalfAltMid.png" size="2200" />
-    </image>
-    <image name="chocoCliffRight">
-      <file name="chocoCliffRight.png" size="2528" />
-    </image>
-    <image name="chocoMid">
-      <file name="chocoMid.png" size="2115" />
-    </image>
-    <image name="chocoCenter">
-      <file name="chocoCenter.png" size="1902" />
-    </image>
-    <image name="chocoHillRight">
-      <file name="chocoHillRight.png" size="1429" />
     </image>
   </images>
   <behaviors />

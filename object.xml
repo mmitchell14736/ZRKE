@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<game GSCVersion="0.10.5" PGFVersion="0.19" title="ZRKE">
+<game GSCVersion="0.10.5" PGFVersion="0.19" title="Gamesalad Platformer Construction Kit v1.1">
   <tags />
   <resolutionIndependence>1</resolutionIndependence>
   <instructions />
@@ -66,6 +66,24 @@ Please contact jamie@jamie-cross.net directly for technical support.</longDescri
     <actor id="id578011" />
     <actor id="id353695" />
     <actor id="id462460" />
+    <actor id="id406319" />
+    <actor id="id720002" />
+    <actor id="id190278" />
+    <actor id="id866316" />
+    <actor id="id760840" />
+    <actor id="id158491" />
+    <actor id="id639294" />
+    <actor id="id793716" />
+    <actor id="id261197" />
+    <actor id="id228604" />
+    <actor id="id130525" />
+    <actor id="id353299" />
+    <actor id="id992953" />
+    <actor id="id154322" />
+    <actor id="id463252" />
+    <actor id="id511269" />
+    <actor id="id788893" />
+    <actor id="id175685" />
   </prototypes>
   <plugins>
     <attributes id="playhaven" />
@@ -82,11 +100,7 @@ Please contact jamie@jamie-cross.net directly for technical support.</longDescri
     </attributes>
   </plugins>
   <scenes>
-    <scene id="id852469" />
-    <scene id="id433475" />
     <scene id="id269551" />
-    <scene id="id269552" />
-    <scene id="id269553" />
   </scenes>
   <attributes>
     <text id="name">default name</text>
