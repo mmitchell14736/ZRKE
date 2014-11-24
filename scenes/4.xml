@@ -3273,15 +3273,15 @@
         <actor id="id960371" prototype="id258072">
           <attributes>
             <point id="position">
-              <real id="x">726.5</real>
-              <real id="y">277</real>
+              <real id="x">730.5</real>
+              <real id="y">251</real>
             </point>
             <size id="size">
               <real id="width">70</real>
               <real id="height">70</real>
             </size>
-            <real id="id123632" name="myMax">280</real>
-            <real id="id397601" name="myMin">200</real>
+            <real id="id123632" name="myMax">560</real>
+            <real id="id397601" name="myMin">150</real>
             <real id="id593767" name="mySpeed">50</real>
             <text id="name">Elevator Copy 4</text>
             <angle id="rotation">0</angle>
@@ -3309,8 +3309,8 @@
               <real id="width">71</real>
               <real id="height">70</real>
             </size>
-            <real id="id123632" name="myMax">500</real>
-            <real id="id397601" name="myMin">250</real>
+            <real id="id123632" name="myMax">560</real>
+            <real id="id397601" name="myMin">150</real>
             <real id="id593767" name="mySpeed">50</real>
             <text id="name">Elevator Copy 3</text>
             <angle id="rotation">0</angle>
@@ -3338,8 +3338,8 @@
               <real id="width">70.6</real>
               <real id="height">70.2307692307692</real>
             </size>
-            <real id="id123632" name="myMax">500</real>
-            <real id="id397601" name="myMin">250</real>
+            <real id="id123632" name="myMax">560</real>
+            <real id="id397601" name="myMin">150</real>
             <real id="id593767" name="mySpeed">50</real>
             <text id="name">Elevator Copy 1</text>
           </attributes>
