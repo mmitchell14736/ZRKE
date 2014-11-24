@@ -1403,7 +1403,7 @@
           <attributes>
             <text id="name">Hero - keep at the top</text>
             <point id="position">
-              <real id="x">137.18359375</real>
+              <real id="x">220.18359375</real>
               <real id="y">357.27734375</real>
             </point>
             <size id="size">
@@ -1424,21 +1424,6 @@
             </physics>
           </aspects>
         </actor>
-      </actors>
-      <attributes>
-        <text id="name">Main Play Layer</text>
-        <boolean id="scrollable">true</boolean>
-      </attributes>
-    </layer>
-    <layer id="id947769">
-      <actors />
-      <attributes>
-        <text id="name">Scenery - Foreground</text>
-        <boolean id="scrollable">true</boolean>
-      </attributes>
-    </layer>
-    <layer id="id855828">
-      <actors>
         <actor id="id779081" prototype="id709615">
           <attributes>
             <point id="position">
@@ -1666,6 +1651,179 @@
             </physics>
           </aspects>
         </actor>
+        <actor id="id157836" prototype="id258072">
+          <attributes>
+            <point id="position">
+              <real id="x">564.5</real>
+              <real id="y">279</real>
+            </point>
+            <size id="size">
+              <real id="width">71</real>
+              <real id="height">70</real>
+            </size>
+            <real id="id123632" name="myMax">280</real>
+            <real id="id397601" name="myMin">150</real>
+            <real id="id593767" name="mySpeed">50</real>
+            <text id="name">Elevator Copy 3</text>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id248330" prototype="id258072">
+          <attributes>
+            <point id="position">
+              <real id="x">410.3</real>
+              <real id="y">278.115384615385</real>
+            </point>
+            <size id="size">
+              <real id="width">70.6</real>
+              <real id="height">70.2307692307692</real>
+            </size>
+            <real id="id123632" name="myMax">280</real>
+            <real id="id397601" name="myMin">150</real>
+            <real id="id593767" name="mySpeed">50</real>
+            <text id="name">Elevator Copy 1</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id659072" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute - Move me down to start</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+                <text id="RHS">
+                  <expression>
+                    <string xml:space="preserve">-</string>
+                    <reference keypath="self.attributes.id593767" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id983935" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move Up</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id744470" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.y</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;=</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="self.attributes.id397601" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id705310" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="self.attributes.id593767" />
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id526470" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move Down</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id316581" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.y</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;=</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="self.attributes.id123632" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id120275" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <string xml:space="preserve">-</string>
+                        <reference keypath="self.attributes.id593767" />
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id175374" class="NoteBehavior" enabled="true">
+              <attributes>
+                <text id="name">Note</text>
+                <text id="bundleName">Note.behavior</text>
+                <text id="note">These behaviors use the myMax, myMin, and mySpeed to move the platform correctly on screen. Those Attributes are best set in the Instance of the actor once it's placed on screen, that is why they start as zero in the Prototype actor.</text>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Main Play Layer</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id947769">
+      <actors />
+      <attributes>
+        <text id="name">Scenery - Foreground</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id855828">
+      <actors>
         <actor id="id516381" prototype="id738636">
           <attributes>
             <point id="position">
@@ -3273,75 +3431,18 @@
         <actor id="id960371" prototype="id258072">
           <attributes>
             <point id="position">
-              <real id="x">730.5</real>
-              <real id="y">251</real>
+              <real id="x">723.5</real>
+              <real id="y">279</real>
             </point>
             <size id="size">
               <real id="width">70</real>
               <real id="height">70</real>
             </size>
-            <real id="id123632" name="myMax">560</real>
+            <real id="id123632" name="myMax">280</real>
             <real id="id397601" name="myMin">150</real>
             <real id="id593767" name="mySpeed">50</real>
             <text id="name">Elevator Copy 4</text>
             <angle id="rotation">0</angle>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
-        <actor id="id157836" prototype="id258072">
-          <attributes>
-            <point id="position">
-              <real id="x">563.5</real>
-              <real id="y">249</real>
-            </point>
-            <size id="size">
-              <real id="width">71</real>
-              <real id="height">70</real>
-            </size>
-            <real id="id123632" name="myMax">560</real>
-            <real id="id397601" name="myMin">150</real>
-            <real id="id593767" name="mySpeed">50</real>
-            <text id="name">Elevator Copy 3</text>
-            <angle id="rotation">0</angle>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
-        <actor id="id248330" prototype="id258072">
-          <attributes>
-            <point id="position">
-              <real id="x">393.3</real>
-              <real id="y">252.115384615385</real>
-            </point>
-            <size id="size">
-              <real id="width">70.6</real>
-              <real id="height">70.2307692307692</real>
-            </size>
-            <real id="id123632" name="myMax">560</real>
-            <real id="id397601" name="myMin">150</real>
-            <real id="id593767" name="mySpeed">50</real>
-            <text id="name">Elevator Copy 1</text>
           </attributes>
           <aspects>
             <graphics>
