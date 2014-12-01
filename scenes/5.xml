@@ -1262,6 +1262,118 @@
         <boolean id="scrollable">true</boolean>
       </attributes>
     </layer>
+	<layer id="id855828">
+      <actors>
+        <actor id="id473039" prototype="id731614">
+          <attributes>
+            <point id="position">
+              <real id="x">70</real>
+              <real id="y">70</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id909928" prototype="id190963">
+          <attributes>
+            <point id="position">
+              <real id="x">940</real>
+              <real id="y">70</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id630905" prototype="id526149">
+          <attributes>
+            <point id="position">
+              <real id="x">840</real>
+              <real id="y">70</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id704605" prototype="id389170">
+          <attributes>
+            <point id="position">
+              <real id="x">950.015625</real>
+              <real id="y">732.765625</real>
+            </point>
+            <size id="size">
+              <real id="width">100</real>
+              <real id="height">48.0390625</real>
+            </size>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id781363" prototype="id703376">
+          <attributes>
+            <point id="position">
+              <real id="x">37</real>
+              <real id="y">732.14453125</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">HUD</text>
+        <boolean id="scrollable">false</boolean>
+      </attributes>
+    </layer>
   </layers>
   <attributes>
     <text id="name">World 3</text>
