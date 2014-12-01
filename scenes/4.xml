@@ -1399,31 +1399,6 @@
             </physics>
           </aspects>
         </actor>
-        <actor id="id512659" prototype="id600717">
-          <attributes>
-            <text id="name">Hero - keep at the top</text>
-            <point id="position">
-              <real id="x">137.18359375</real>
-              <real id="y">357.27734375</real>
-            </point>
-            <size id="size">
-              <real id="width">69</real>
-              <real id="height">94</real>
-            </size>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
       </actors>
       <attributes>
         <text id="name">Main Play Layer</text>
@@ -3453,6 +3428,28 @@
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
               </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id678540" prototype="id600717">
+          <attributes>
+            <point id="position">
+              <real id="x">107</real>
+              <real id="y">360</real>
+            </point>
+            <size id="size">
+              <real id="width">50</real>
+              <real id="height">100</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
             </graphics>
             <motion />
             <physics>
