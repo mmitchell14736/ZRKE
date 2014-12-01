@@ -279,6 +279,15 @@
     <image name="Quit">
       <file name="Quit.png" size="6711" />
     </image>
+    <image name="chocoHillLeft2">
+      <file name="chocoHillLeft2.png" size="1905" />
+    </image>
+    <image name="chocoHillRight2">
+      <file name="chocoHillRight2.png" size="1958" />
+    </image>
+    <image name="liquidWater">
+      <file name="liquidWater.png" size="896" />
+    </image>
   </images>
   <behaviors />
 </assets>
