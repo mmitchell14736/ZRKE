@@ -1344,8 +1344,8 @@ The Change Attribute below handles the strength/height of the players jump. I've
         <enumeration id="verticalAnchor">0</enumeration>
         <boolean id="flipHorizontally">false</boolean>
         <boolean id="flipVertically">false</boolean>
-        <integer id="tileWidth">36</integer>
-        <integer id="tileHeight">46</integer>
+        <integer id="tileWidth">50</integer>
+        <integer id="tileHeight">100</integer>
       </attributes>
     </graphics>
     <motion>
