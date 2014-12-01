@@ -1262,7 +1262,7 @@
         <boolean id="scrollable">true</boolean>
       </attributes>
     </layer>
-	<layer id="id855828">
+    <layer id="id855828">
       <actors>
         <actor id="id473039" prototype="id731614">
           <attributes>
