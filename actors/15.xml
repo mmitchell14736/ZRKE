@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor id="id612515" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">slime</text>
+    <text id="name">cat</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">40</real>
-      <real id="height">22</real>
+      <real id="width">80</real>
+      <real id="height">50</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,7 +18,7 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">slime-01</image>
+    <image id="image">cat 1_00001</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
     <real id="id611607" name="myMax">100</real>
@@ -86,7 +86,7 @@ This enemy has a default speed and distance it travels side to side. To adjust t
           <attributes>
             <text id="name">Animate - Me</text>
             <text id="bundleName">Animate.behavior</text>
-            <text id="images">slime-01	slime-02</text>
+            <text id="images">cat 1_00001	cat 1_00002	cat 1_00003	cat 1_00004	cat 1_00005	cat 1_00006	cat 1_00007</text>
             <index id="speed">5</index>
             <boolean id="loop">true</boolean>
             <boolean id="restoreActorImage">true</boolean>
@@ -276,7 +276,7 @@ This enemy has a default speed and distance it travels side to side. To adjust t
                   <real id="RHS">
                     <expression>
                       <reference keypath="self.attributes.position.y" />
-                      <string xml:space="preserve">+23</string>
+                      <string xml:space="preserve">+30</string>
                     </expression>
                   </real>
                 </attributes>
@@ -409,6 +409,23 @@ This enemy has a default speed and distance it travels side to side. To adjust t
             <real id="pitch">1</real>
           </attributes>
         </behavior>
+        <behavior id="id291847" class="AnimateBehavior" enabled="true">
+          <attributes>
+            <text id="name">Animate</text>
+            <text id="bundleName">Animate.behavior</text>
+            <text id="images">Explosion2_001	Explosion2_005	Explosion2_009	Explosion2_013	Explosion2_017	Explosion2_021</text>
+            <index id="speed">10</index>
+            <boolean id="loop">false</boolean>
+            <boolean id="restoreActorImage">false</boolean>
+          </attributes>
+        </behavior>
+        <behavior id="id756031" class="GrowShrinkBehavior" enabled="true">
+          <attributes>
+            <text id="name">Change Size</text>
+            <text id="bundleName">ChangeSize.behavior</text>
+            <real id="growthRate">2</real>
+          </attributes>
+        </behavior>
         <behavior id="id972219" class="ChangeAttributeAction" enabled="true">
           <attributes>
             <text id="name">Change Attribute - Update the score</text>
@@ -428,13 +445,6 @@ This enemy has a default speed and distance it travels side to side. To adjust t
             <text id="bundleName">ChangeAttribute.behavior</text>
             <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
             <text id="RHS">0</text>
-          </attributes>
-        </behavior>
-        <behavior id="id411428" class="ChangeImageAction" enabled="true">
-          <attributes>
-            <text id="name">Change Image - Show my death image</text>
-            <text id="bundleName">ChangeImage.behavior</text>
-            <image id="image">slime-03</image>
           </attributes>
         </behavior>
         <behavior id="id361434" class="TimerBehavior" enabled="true">

@@ -288,6 +288,90 @@
     <image name="liquidWater">
       <file name="liquidWater.png" size="896" />
     </image>
+    <image name="but1">
+      <file name="but1.png" size="25340" />
+    </image>
+    <image name="but3">
+      <file name="but3.png" size="23795" />
+    </image>
+    <image name="but5">
+      <file name="but5.png" size="25247" />
+    </image>
+    <image name="but7">
+      <file name="but7.png" size="25505" />
+    </image>
+    <image name="but9">
+      <file name="but9.png" size="25456" />
+    </image>
+    <image name="but11">
+      <file name="but11.png" size="25260" />
+    </image>
+    <image name="but13">
+      <file name="but13.png" size="23795" />
+    </image>
+    <image name="Explosion2_001">
+      <file name="Explosion2_001.png" size="7223" />
+    </image>
+    <image name="Explosion2_005">
+      <file name="Explosion2_005.png" size="47520" />
+    </image>
+    <image name="Explosion2_009">
+      <file name="Explosion2_009.png" size="88842" />
+    </image>
+    <image name="Explosion2_013">
+      <file name="Explosion2_013.png" size="119114" />
+    </image>
+    <image name="Explosion2_017">
+      <file name="Explosion2_017.png" size="115296" />
+    </image>
+    <image name="Explosion2_021">
+      <file name="Explosion2_021.png" size="85663" />
+    </image>
+    <image name="cat 1_00001">
+      <file name="cat 1_00001.png" size="38662" />
+    </image>
+    <image name="cat 1_00002">
+      <file name="cat 1_00002.png" size="38335" />
+    </image>
+    <image name="cat 1_00003">
+      <file name="cat 1_00003.png" size="38545" />
+    </image>
+    <image name="cat 1_00004">
+      <file name="cat 1_00004.png" size="38898" />
+    </image>
+    <image name="cat 1_00005">
+      <file name="cat 1_00005.png" size="38981" />
+    </image>
+    <image name="cat 1_00006">
+      <file name="cat 1_00006.png" size="38897" />
+    </image>
+    <image name="cat 1_00007">
+      <file name="cat 1_00007.png" size="38843" />
+    </image>
+    <image name="brain transparent2">
+      <file name="brain transparent2.png" size="110708" />
+    </image>
+    <image name="rainbow1">
+      <file name="rainbow1.png" size="2832" />
+    </image>
+    <image name="rainbow2">
+      <file name="rainbow2.png" size="3756" />
+    </image>
+    <image name="rainbow3">
+      <file name="rainbow3.png" size="5720" />
+    </image>
+    <image name="rainbow4">
+      <file name="rainbow4.png" size="7471" />
+    </image>
+    <image name="rainbow5">
+      <file name="rainbow5.png" size="9108" />
+    </image>
+    <image name="rainbow6">
+      <file name="rainbow6.png" size="12407" />
+    </image>
+    <image name="rainbow7">
+      <file name="rainbow7.png" size="15648" />
+    </image>
   </images>
   <behaviors />
 </assets>

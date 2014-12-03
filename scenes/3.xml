@@ -2,7 +2,31 @@
 <scene PGFVersion="0.19" GSCVersion="0.10.5" id="id269551">
   <layers>
     <layer id="id800663">
-      <actors />
+      <actors>
+        <actor id="id343573" prototype="id868806">
+          <attributes>
+            <point id="position">
+              <real id="x">1442.5</real>
+              <real id="y">845.5</real>
+            </point>
+            <size id="size">
+              <real id="width">3275</real>
+              <real id="height">1697</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl 1 bg</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
       <attributes>
         <text id="name">Background</text>
         <boolean id="scrollable">true</boolean>
@@ -758,31 +782,6 @@
             <size id="size">
               <real id="width">50</real>
               <real id="height">1047.171875</real>
-            </size>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
-        <actor id="id449325" prototype="id223618">
-          <attributes>
-            <text id="name">player death/controller - keep second from the top</text>
-            <point id="position">
-              <real id="x">1543.150390625</real>
-              <real id="y">-28.244140625</real>
-            </point>
-            <size id="size">
-              <real id="width">3154.36328125</real>
-              <real id="height">53.48828125</real>
             </size>
           </attributes>
           <aspects>
@@ -1823,6 +1822,126 @@
             </physics>
           </aspects>
         </actor>
+        <actor id="id449325" prototype="id223618">
+          <attributes>
+            <text id="name">player death/controller - keep second from the top</text>
+            <point id="position">
+              <real id="x">1543.150390625</real>
+              <real id="y">-28.244140625</real>
+            </point>
+            <size id="size">
+              <real id="width">3154.36328125</real>
+              <real id="height">53.48828125</real>
+            </size>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id224533" prototype="id600717">
+          <attributes>
+            <point id="position">
+              <real id="x">107</real>
+              <real id="y">361</real>
+            </point>
+            <size id="size">
+              <real id="width">50</real>
+              <real id="height">100</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id813079" prototype="id537380">
+          <attributes>
+            <point id="position">
+              <real id="x">1118</real>
+              <real id="y">403</real>
+            </point>
+            <size id="size">
+              <real id="width">76</real>
+              <real id="height">84</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">bee</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id193033" prototype="id612515">
+          <attributes>
+            <point id="position">
+              <real id="x">528.189521345408</real>
+              <real id="y">186.5</real>
+            </point>
+            <size id="size">
+              <real id="width">80</real>
+              <real id="height">50</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id729448" prototype="id288758">
+          <attributes>
+            <point id="position">
+              <real id="x">290.689521345408</real>
+              <real id="y">493</real>
+            </point>
+            <size id="size">
+              <real id="width">50</real>
+              <real id="height">30</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
       </actors>
       <attributes>
         <text id="name">Main Play Layer</text>
@@ -1928,31 +2047,6 @@
               <real id="x">70</real>
               <real id="y">70</real>
             </point>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
-        <actor id="id224533" prototype="id600717">
-          <attributes>
-            <point id="position">
-              <real id="x">107</real>
-              <real id="y">361</real>
-            </point>
-            <size id="size">
-              <real id="width">50</real>
-              <real id="height">100</real>
-            </size>
-            <angle id="rotation">0</angle>
           </attributes>
           <aspects>
             <graphics>

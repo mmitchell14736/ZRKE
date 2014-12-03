@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor id="id537380" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">bee</text>
+    <text id="name">but</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">40</real>
-      <real id="height">34</real>
+      <real id="width">400</real>
+      <real id="height">400</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,7 +18,7 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">bee-01</image>
+    <image id="image">but1</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
     <real id="id653805" name="myMax">200</real>
@@ -131,7 +131,7 @@ This enemy has a default speed and distance it travels side to side. To adjust t
           <attributes>
             <text id="name">Animate Me</text>
             <text id="bundleName">Animate.behavior</text>
-            <text id="images">bee-01	bee-02</text>
+            <text id="images">but1	but3	but5	but7	but9	but11	but13</text>
             <index id="speed">25</index>
             <boolean id="loop">true</boolean>
             <boolean id="restoreActorImage">true</boolean>
@@ -449,7 +449,7 @@ Check the OTHERWISE section in the rule below!</text>
               <real id="RHS">
                 <expression>
                   <reference keypath="self.attributes.position.y" />
-                  <string xml:space="preserve">+23</string>
+                  <string xml:space="preserve">+30</string>
                 </expression>
               </real>
             </attributes>
@@ -473,6 +473,14 @@ Check the OTHERWISE section in the rule below!</text>
             <text id="name">Change Attribute - kill the player</text>
             <text id="bundleName">ChangeAttribute.behavior</text>
             <text id="targetAttribute">game.attributes.id264363</text>
+            <text id="RHS">true</text>
+          </attributes>
+        </behavior>
+        <behavior id="id969918" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id204301</text>
             <text id="RHS">true</text>
           </attributes>
         </behavior>
@@ -591,11 +599,14 @@ Check the OTHERWISE section in the rule below!</text>
             <real id="pitch">1</real>
           </attributes>
         </behavior>
-        <behavior id="id842610" class="ChangeImageAction" enabled="true">
+        <behavior id="id378566" class="AnimateBehavior" enabled="true">
           <attributes>
-            <text id="name">Change Image - Show my dead image</text>
-            <text id="bundleName">ChangeImage.behavior</text>
-            <image id="image">bee-dead</image>
+            <text id="name">Animate</text>
+            <text id="bundleName">Animate.behavior</text>
+            <text id="images">Explosion2_001	Explosion2_005	Explosion2_009	Explosion2_013	Explosion2_017	Explosion2_021</text>
+            <index id="speed">10</index>
+            <boolean id="loop">false</boolean>
+            <boolean id="restoreActorImage">false</boolean>
           </attributes>
         </behavior>
         <behavior id="id208799" class="ChangeAttributeAction" enabled="true">
@@ -606,12 +617,11 @@ Check the OTHERWISE section in the rule below!</text>
             <text id="RHS">0</text>
           </attributes>
         </behavior>
-        <behavior id="id724785" class="ChangeAttributeAction" enabled="true">
+        <behavior id="id595452" class="GrowShrinkBehavior" enabled="true">
           <attributes>
-            <text id="name">Change Attribute - Drop me off screen</text>
-            <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
-            <text id="RHS">-200</text>
+            <text id="name">Change Size</text>
+            <text id="bundleName">ChangeSize.behavior</text>
+            <real id="growthRate">2</real>
           </attributes>
         </behavior>
         <behavior id="id623483" class="TimerBehavior" enabled="true">

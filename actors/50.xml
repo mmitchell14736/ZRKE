@@ -8,8 +8,8 @@
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">70</real>
-      <real id="height">70</real>
+      <real id="width">50</real>
+      <real id="height">30</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,11 +18,45 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">liquidWaterTop_mid</image>
+    <image id="image">rainbow1</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
+    <boolean id="id734178" name="dead">false</boolean>
   </attributes>
-  <behaviors />
+  <behaviors>
+    <behavior id="id287488" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id677765" eventType="mouse position" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.id734178</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">0</index>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id528990" class="AnimateBehavior" enabled="true">
+          <attributes>
+            <text id="name">Animate Me</text>
+            <text id="bundleName">Animate.behavior</text>
+            <text id="images">rainbow1	rainbow2	rainbow3	rainbow4	rainbow5	rainbow6	rainbow7</text>
+            <index id="speed">10</index>
+            <boolean id="loop">true</boolean>
+            <boolean id="restoreActorImage">true</boolean>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
   <aspects>
     <graphics>
       <attributes>
