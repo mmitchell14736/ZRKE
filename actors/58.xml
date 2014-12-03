@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id349882" PGFVersion="0.19" GSCVersion="0.10.5">
+<actor id="id655583" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">Actor 1</text>
+    <text id="name">Actor 17</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -18,7 +18,7 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">chocoHillLeft2</image>
+    <image id="image">chocoHillRight2</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>

@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game GSCVersion="0.10.5" PGFVersion="0.19" title="ZRKE">
-  <attributes>
-    <text id="name">default name</text>
-    <real id="time">0</real>
-    <size id="displaySize">
-      <real id="width">1024</real>
-      <real id="height">768</real>
-    </size>
-    <text id="actorTags">special	platforms</text>
-    <real id="id261653" name="playerX">0</real>
-    <real id="id806456" name="playerY">0</real>
-    <boolean id="id395742" name="spring">false</boolean>
-    <boolean id="id264363" name="bouncePlayer">false</boolean>
-    <real id="id787143" name="sliderOffsetX-1">0</real>
-    <integer id="id291291" name="lives">3</integer>
-    <integer id="id753353" name="score">0</integer>
-    <boolean id="id447662" name="spawnPlayer">false</boolean>
-    <real id="id152866" name="spawnX">0</real>
-    <real id="id323543" name="spawnY">0</real>
-    <boolean id="id279594" name="exitLevel">false</boolean>
-    <boolean id="id965315" name="switchOn">false</boolean>
-    <text id="id188001" name="move">nill</text>
-    <boolean id="id963977" name="enemyPop">false</boolean>
-  </attributes>
   <tags />
   <resolutionIndependence>1</resolutionIndependence>
   <instructions />
@@ -90,6 +67,28 @@ Please contact jamie@jamie-cross.net directly for technical support.</longDescri
     <actor id="id353695" />
     <actor id="id462460" />
     <actor id="id324954" />
+    <actor id="id655583" />
+    <actor id="id342839" />
+    <actor id="id738393" />
+    <actor id="id142804" />
+    <actor id="id324773" />
+    <actor id="id495505" />
+    <actor id="id754573" />
+    <actor id="id754012" />
+    <actor id="id721909" />
+    <actor id="id481777" />
+    <actor id="id350205" />
+    <actor id="id641592" />
+    <actor id="id949033" />
+    <actor id="id339480" />
+    <actor id="id511181" />
+    <actor id="id256754" />
+    <actor id="id464857" />
+    <actor id="id251628" />
+    <actor id="id805099" />
+    <actor id="id464049" />
+    <actor id="id684654" />
+    <actor id="id304149" />
   </prototypes>
   <plugins>
     <attributes id="playhaven" />
@@ -112,4 +111,27 @@ Please contact jamie@jamie-cross.net directly for technical support.</longDescri
     <scene id="id269552" />
     <scene id="id269553" />
   </scenes>
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">1024</real>
+      <real id="height">768</real>
+    </size>
+    <text id="actorTags">special	platforms</text>
+    <real id="id261653" name="playerX">0</real>
+    <real id="id806456" name="playerY">0</real>
+    <boolean id="id395742" name="spring">false</boolean>
+    <boolean id="id264363" name="bouncePlayer">false</boolean>
+    <real id="id787143" name="sliderOffsetX-1">0</real>
+    <integer id="id291291" name="lives">3</integer>
+    <integer id="id753353" name="score">0</integer>
+    <boolean id="id447662" name="spawnPlayer">false</boolean>
+    <real id="id152866" name="spawnX">0</real>
+    <real id="id323543" name="spawnY">0</real>
+    <boolean id="id279594" name="exitLevel">false</boolean>
+    <boolean id="id965315" name="switchOn">false</boolean>
+    <text id="id188001" name="move">nill</text>
+    <boolean id="id963977" name="enemyPop">false</boolean>
+  </attributes>
 </game>
