@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game GSCVersion="0.10.5" PGFVersion="0.19" title="ZRKE">
-  <attributes>
-    <text id="name">default name</text>
-    <real id="time">0</real>
-    <size id="displaySize">
-      <real id="width">1024</real>
-      <real id="height">768</real>
-    </size>
-    <text id="actorTags">special	platforms</text>
-    <real id="id261653" name="playerX">0</real>
-    <real id="id806456" name="playerY">0</real>
-    <boolean id="id395742" name="spring">false</boolean>
-    <boolean id="id264363" name="bouncePlayer">false</boolean>
-    <real id="id787143" name="sliderOffsetX-1">0</real>
-    <integer id="id291291" name="lives">3</integer>
-    <integer id="id753353" name="score">0</integer>
-    <boolean id="id447662" name="spawnPlayer">false</boolean>
-    <real id="id152866" name="spawnX">0</real>
-    <real id="id323543" name="spawnY">0</real>
-    <boolean id="id279594" name="exitLevel">false</boolean>
-    <boolean id="id965315" name="switchOn">false</boolean>
-    <text id="id188001" name="move">nill</text>
-    <boolean id="id963977" name="enemyPop">false</boolean>
-    <boolean id="id267449" name="switchOn2">false</boolean>
-  </attributes>
   <tags />
   <resolutionIndependence>1</resolutionIndependence>
   <instructions />
@@ -113,6 +89,8 @@ Please contact jamie@jamie-cross.net directly for technical support.</longDescri
     <actor id="id464049" />
     <actor id="id684654" />
     <actor id="id304149" />
+    <actor id="id188726" />
+    <actor id="id904844" />
   </prototypes>
   <plugins>
     <attributes id="playhaven" />
@@ -136,4 +114,29 @@ Please contact jamie@jamie-cross.net directly for technical support.</longDescri
     <scene id="id269553" />
     <scene id="id269554" />
   </scenes>
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">1024</real>
+      <real id="height">768</real>
+    </size>
+    <text id="actorTags">special	platforms</text>
+    <real id="id261653" name="playerX">0</real>
+    <real id="id806456" name="playerY">0</real>
+    <boolean id="id395742" name="spring">false</boolean>
+    <boolean id="id264363" name="bouncePlayer">false</boolean>
+    <real id="id787143" name="sliderOffsetX-1">0</real>
+    <integer id="id291291" name="lives">3</integer>
+    <integer id="id753353" name="score">0</integer>
+    <boolean id="id447662" name="spawnPlayer">false</boolean>
+    <real id="id152866" name="spawnX">0</real>
+    <real id="id323543" name="spawnY">0</real>
+    <boolean id="id279594" name="exitLevel">false</boolean>
+    <boolean id="id965315" name="switchOn">false</boolean>
+    <text id="id188001" name="move">nill</text>
+    <boolean id="id963977" name="enemyPop">false</boolean>
+    <integer id="id389855" name="health">100</integer>
+    <integer id="id581880" name="playerDamage">10</integer>
+  </attributes>
 </game>

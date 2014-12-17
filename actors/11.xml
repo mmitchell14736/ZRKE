@@ -38,15 +38,29 @@
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id673293" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+        <condition id="id180866" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
           <attributes>
+            <text id="name">default name</text>
             <index id="conditionType">0</index>
           </attributes>
           <predicate type="collision">
             <attributes>
               <text id="prototypeKey">id600717</text>
-              <text id="actorTag">special</text>
+              <text id="actorTag" />
               <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id170389" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id389855</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&lt;=</text>
+              <real id="RHS">0</real>
             </attributes>
           </predicate>
         </condition>
@@ -65,20 +79,20 @@
             </text>
           </attributes>
         </behavior>
-        <behavior id="id816968" class="ChangeAttributeAction" enabled="true">
-          <attributes>
-            <text id="name">Change Attribute - allow a new hero to spawn</text>
-            <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">game.attributes.id447662</text>
-            <text id="RHS">true</text>
-          </attributes>
-        </behavior>
         <behavior id="id558679" class="ChangeAttributeAction" enabled="true">
           <attributes>
             <text id="name">Change Attribute - reset player</text>
             <text id="bundleName">ChangeAttribute.behavior</text>
             <text id="targetAttribute">game.attributes.id264363</text>
             <text id="RHS">false</text>
+          </attributes>
+        </behavior>
+        <behavior id="id816968" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute - allow a new hero to spawn</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id447662</text>
+            <text id="RHS">true</text>
           </attributes>
         </behavior>
         <behavior id="id976059" class="RuleBehavior" enabled="true">
