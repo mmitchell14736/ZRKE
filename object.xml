@@ -22,6 +22,7 @@
     <boolean id="id965315" name="switchOn">false</boolean>
     <text id="id188001" name="move">nill</text>
     <boolean id="id963977" name="enemyPop">false</boolean>
+    <boolean id="id267449" name="switchOn2">false</boolean>
   </attributes>
   <tags />
   <resolutionIndependence>1</resolutionIndependence>

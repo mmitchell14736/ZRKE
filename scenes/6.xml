@@ -561,6 +561,173 @@
             </size>
             <angle id="rotation">0</angle>
           </attributes>
+          <behaviors>
+            <behavior id="id410798" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Button setup</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id266102" class="NoteBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Note</text>
+                    <text id="bundleName">Note.behavior</text>
+                    <text id="note">The Spawn Behavior below spawns the 'switch-down' actor in the correct location so it is already present when this button disappears in the 'hide/show the main switch' rule below.</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id311108" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor - spawn my switch bottom actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id963582</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">-7</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id533675" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Crate activate the switch</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id993988" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id919227</text>
+                      <text id="actorTag">special</text>
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id741615" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id965315</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id160944" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id965315</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior id="id170149" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Player activate the switch</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id249151" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id600717</text>
+                      <text id="actorTag">special</text>
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+                <condition id="id287657" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id806456</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="self.attributes.position.y" />
+                          <string xml:space="preserve">+12</string>
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id734429" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id965315</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id462150" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Hide/show the main switch</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id812142" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id965315</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id708085" class="NoteBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Note</text>
+                    <text id="bundleName">Note.behavior</text>
+                    <text id="note">Check the OTHERWISE section.
+</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id378985" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">0</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id163474" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">1</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
               <attributes>
@@ -1130,6 +1297,75 @@
             </size>
             <angle id="rotation">0</angle>
           </attributes>
+          <behaviors>
+            <behavior id="id950105" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute - Record my starting Y location</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.id392975</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.position.y" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id760241" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Open and Close the gate</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id603189" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id965315</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id966327" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <real id="finalValue">
+                      <expression>
+                        <reference keypath="self.attributes.id392975" />
+                        <string xml:space="preserve">+100</string>
+                      </expression>
+                    </real>
+                    <real id="duration">2</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id917512" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <real id="finalValue">
+                      <expression>
+                        <reference keypath="self.attributes.id392975" />
+                      </expression>
+                    </real>
+                    <real id="duration">2</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
               <attributes>
@@ -2514,6 +2750,75 @@
             </size>
             <angle id="rotation">0</angle>
           </attributes>
+          <behaviors>
+            <behavior id="id781518" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute - Record my starting Y location</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.id392975</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.position.y" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id794949" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Open and Close the gate</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id146819" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id267449</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id291453" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <real id="finalValue">
+                      <expression>
+                        <reference keypath="self.attributes.id392975" />
+                        <string xml:space="preserve">+100</string>
+                      </expression>
+                    </real>
+                    <real id="duration">2</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id705888" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <real id="finalValue">
+                      <expression>
+                        <reference keypath="self.attributes.id392975" />
+                      </expression>
+                    </real>
+                    <real id="duration">2</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
               <attributes>
@@ -2539,6 +2844,132 @@
             </size>
             <angle id="rotation">0</angle>
           </attributes>
+          <behaviors>
+            <behavior id="id714774" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Button setup</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id897158" class="NoteBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Note</text>
+                    <text id="bundleName">Note.behavior</text>
+                    <text id="note">The Spawn Behavior below spawns the 'switch-down' actor in the correct location so it is already present when this button disappears in the 'hide/show the main switch' rule below.</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id768203" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor - spawn my switch bottom actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id963582</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">-7</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id753276" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Player activate the switch</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id240420" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id600717</text>
+                      <text id="actorTag">special</text>
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+                <condition id="id347407" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id806456</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="self.attributes.position.y" />
+                          <string xml:space="preserve">+12</string>
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id409874" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id267449</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id240280" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Hide/show the main switch</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id931695" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id965315</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id673302" class="NoteBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Note</text>
+                    <text id="bundleName">Note.behavior</text>
+                    <text id="note">Check the OTHERWISE section.
+</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id922672" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">0</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id716727" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">1</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
               <attributes>
@@ -2709,8 +3140,8 @@
         <actor id="id498341" prototype="id600717">
           <attributes>
             <point id="position">
-              <real id="x">127.5</real>
-              <real id="y">1343.5</real>
+              <real id="x">395.5</real>
+              <real id="y">1497.5</real>
             </point>
             <size id="size">
               <real id="width">61</real>
@@ -2957,7 +3388,7 @@
       </actors>
       <attributes>
         <text id="name">HUD</text>
-        <boolean id="scrollable">true</boolean>
+        <boolean id="scrollable">false</boolean>
       </attributes>
     </layer>
   </layers>

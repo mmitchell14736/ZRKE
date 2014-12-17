@@ -372,6 +372,9 @@
     <image name="rainbow7">
       <file name="rainbow7.png" size="15648" />
     </image>
+    <image name="cakeCenter1">
+      <file name="cakeCenter1.png" size="1731" />
+    </image>
   </images>
   <behaviors />
 </assets>
