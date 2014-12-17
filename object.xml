@@ -24,6 +24,7 @@
     <boolean id="id963977" name="enemyPop">false</boolean>
     <integer id="id389855" name="health">100</integer>
     <integer id="id581880" name="playerDamage">10</integer>
+    <boolean id="id313895" name="respawnBlocks">false</boolean>
   </attributes>
   <tags />
   <resolutionIndependence>1</resolutionIndependence>

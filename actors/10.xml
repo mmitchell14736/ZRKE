@@ -166,6 +166,14 @@
             <text id="RHS">300</text>
           </attributes>
         </behavior>
+        <behavior id="id255966" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id313895</text>
+            <text id="RHS">false</text>
+          </attributes>
+        </behavior>
       </behaviors>
       <elseBehaviors />
     </behavior>
