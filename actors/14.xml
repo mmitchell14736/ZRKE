@@ -468,15 +468,20 @@ Check the OTHERWISE section in the rule below!</text>
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id451264" class="ChangeAttributeAction" enabled="true">
+        <behavior id="id869500" class="ChangeAttributeAction" enabled="true">
           <attributes>
-            <text id="name">Change Attribute - kill the player</text>
+            <text id="name">Change Attribute</text>
             <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">game.attributes.id264363</text>
-            <text id="RHS">true</text>
+            <text id="targetAttribute">game.attributes.id389855</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id389855" />
+                <string xml:space="preserve">-20</string>
+              </expression>
+            </text>
           </attributes>
         </behavior>
-        <behavior id="id969918" class="ChangeAttributeAction" enabled="true">
+        <behavior id="id229865" class="ChangeAttributeAction" enabled="true">
           <attributes>
             <text id="name">Change Attribute</text>
             <text id="bundleName">ChangeAttribute.behavior</text>

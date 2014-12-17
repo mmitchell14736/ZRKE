@@ -371,8 +371,8 @@ These two behaviors handle the Non-Wall-Jumping actor. The player will collide w
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
-                    <text id="targetAttribute">game.attributes.id264363</text>
-                    <text id="RHS">true</text>
+                    <text id="targetAttribute">game.attributes.id389855</text>
+                    <text id="RHS">0</text>
                   </attributes>
                 </behavior>
               </behaviors>
@@ -489,7 +489,7 @@ These two behaviors handle the Non-Wall-Jumping actor. The player will collide w
               <attributes>
                 <text id="name">Destory me when I hit 'player death'</text>
                 <text id="bundleName">Rule.behavior</text>
-                <real id="compoundConditionKind">0</real>
+                <real id="compoundConditionKind">1</real>
               </attributes>
               <conditions>
                 <condition id="id660020" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
@@ -867,7 +867,7 @@ Added the rule below to pop/bounce the player up after they crush and enemy.</te
           <predicate type="key">
             <attributes>
               <text id="mode">up</text>
-              <text id="keyString">space</text>
+              <text id="keyString">up</text>
             </attributes>
           </predicate>
         </condition>
@@ -1165,7 +1165,7 @@ Check the OTHERWISE section
                   <predicate type="key">
                     <attributes>
                       <text id="mode">down</text>
-                      <text id="keyString">space</text>
+                      <text id="keyString">up</text>
                     </attributes>
                   </predicate>
                 </condition>
@@ -1331,6 +1331,87 @@ The Change Attribute below handles the strength/height of the players jump. I've
         </behavior>
       </behaviors>
       <elseBehaviors />
+    </behavior>
+    <behavior id="id613292" class="SpawnAction" enabled="true">
+      <attributes>
+        <text id="name">Spawn Actor</text>
+        <text id="bundleName">Spawn.behavior</text>
+        <text id="prototypeKey">id138391</text>
+        <angle id="direction">0</angle>
+        <index id="directionSpace">0</index>
+        <real id="x">0</real>
+        <real id="y">0</real>
+        <index id="positionSpace">0</index>
+        <index id="layerOrder">0</index>
+      </attributes>
+    </behavior>
+    <behavior id="id922306" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id537782" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id389855</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&lt;=</text>
+              <real id="RHS">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id947483" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id264363</text>
+            <text id="RHS">true</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id108717" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id141555" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="key">
+            <attributes>
+              <text id="mode">down</text>
+              <text id="keyString">space</text>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id950520" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id904844</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">28</real>
+            <real id="y">0</real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">2</index>
+          </attributes>
+        </behavior>
+      </behaviors>
     </behavior>
   </behaviors>
   <aspects>
